@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "trangunghoa",
-    "repositoryName": "hubpress.io",
-    "branch": "gh-pages"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"trangunghoa","repositoryName":"hubpress.io","branch":"gh-pages","cname":"blog.tranglt.com"},"site":{"url":"http://blog.tranglt.com"},"socialnetwork":{},"theme":{"name":"Casper","url":"http://trangunghoa.github.io/hubpress.io/themes/Casper"}}
