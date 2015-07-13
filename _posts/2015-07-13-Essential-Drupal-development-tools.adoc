@@ -1,4 +1,7 @@
 = Essential Drupal development tools
+:hp-tags: drupal, tools
+:keywords: Essential Drupal development tools
+
 
 You can build Drupal websites with just a few tools, such as a code editor, browser and dev environment. While it is not necessary to use additional tools, tools do make your life easier and can save you a tonne of time and improve the quality of your work. So let’s take a look at the essential tools to use to develop with Drupal.
 
