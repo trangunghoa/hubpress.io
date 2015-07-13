@@ -147,39 +147,57 @@ You can Drupal Project Lookup from the Chrome web store.
 Drupal API Search is a Chrome extension that saves time when searching for API documentation on api.drupal.org. To use it, type dr followed by function name you are looking for. It will autocomplete as you type. For example, to go to the API documentation for hook_form_alter, type “dr hook_form_alter”. This will take you to https://api.drupal.org/api/drupal/developer%21hooks%21core.php/function/hook_form_alter/6.
 It defaults to Drupal 6 pages on api.drupal.org. You can change this by going to your chrome extensions page (chrome://extensions/), and clicking options for Drupal API Search. There you can change the Drupal version to 7 or 8.
 
-Get Drupal API Search
+(Get Drupal API Search*
 
 You can get Drupal API Search from the Chrome web store.
-Dreditor
+
+*Dreditor*
+
 Dreditor improves the experience of reviewing patches and commenting on issues on drupal.org. Its features include:
 Adds a patch reviewer button to patches in issues on drupal.org. After you click on the review button, you will get a nice patch file with syntax highlighting.
 Provides Auto-completion when adding comments on Drupal.org.
 Makes it easier to attach screenshots to issues
 Provides a template for commit messages
-Get Dreditor
+
+*Get Dreditor*
+
 You can get Dreditor from its website.
 Non-Drupal specific tools
 There is a bunch of other tools that you may need to make your life easier developing Drupal modules and themes.
 Code editor or IDE.
 I use PhpStorm for a kick ass IDE or Sublime Text for a great code editor.
-MySQL GUI
+
+*MySQL GUI*
+
 You can use the command line to interact with MySQL, but you might find it easier to use a GUI.
 PhpMyAdmin is the standard that you will find in a lot of places, including most hosting providers. For Mac, Sequel Pro is fast, slick and easy to use.
 Snippet manager
 There is lots of little (and big) bits of code that will be reused and it makes sense to store these in a snippet manager so you can easily reuse them. A lot of IDEs and code editors provide this functionality. I use a 3rd part tool because I often change IDEs, but want to retain the same snippet repo. I use Snippets (Mac only).
-Xdebug
+
+*Xdebug*
+
 Xdebug is a debugging and profiling tool for Drupal. It allows you to step through your code, line by line, as a request is being returned. If you have a bug and you don’t know which bit of code is causing it, Xdebug can be a real timesaver. Even if you are not trying to identify a bug, this is a very useful exercise just to see all of the code that is run when Drupal is dealing with a request for a particular URL.
 CSS preprocesser
+
 Organise your CSS code and make it much easier to developer and maintaining with a CSS preprocesser The two most popular are Sass and Less. If you use Sass, then I recommend you use Compass as well.
 Other tools worth mentioning
+
 The following tools are not essential, especially if you are just starting with Drupal development. I have listed them here for completeness and you may find yourself needing to use them at some stage.
+
 Vagrant for creating a virtual development environment and Puppet or Chef for configuration management.
+
 VMWare - run a LAMP stack on Mac or Windows, as an alternative to Vagrant.
+
 XAMPP (cross platform), WampServer(Windows) or MAMP(Mac) for a development environment if you don’t want the hassle of setting one up with Vagrant or VMWare.
+
 Aegir is a system that makes it easier to deploy and manage multiple Drupal sites and servers. Aegir automates the process of creating server configuration files, databases and Drupal installation. There are additional AEgir based systems such as Barracuda, Octopusand DevShop.
+
 Behat / PHP Unit / Simple Test / Selenium for automated testing
 Kcachegrind / jMeter / Apache Bench for Performance testing.
+
 XHProf Code Profiler for profiling. Profiling is to measure the execution time for function or method calls when an application is dealing with a page request.
+
 New Relic to help you identify performance issues so you can create a faster application
 Deadwood to makes it easier to upgrade a module for a new major version of Drupal. It is now merged into Coder and is called Coder Upgrade, but you still need Deadwood if upgrading from Drupal 5 to 6.
+
 Schema for additional functionality not provided by the Schema API
