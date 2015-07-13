@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Essential Drupal development tools</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//blog.tranglt.com/themes/Roon/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
+    <link rel="stylesheet" type="text/css" href="//blog.tranglt.com/themes/Roon/assets/css/screen.css?v=1.0.0" />
+
+    <link rel="canonical" href="http://blog.tranglt.com/2015/07/13/Essential-Drupal-development-tools.html" />
+    
+    <meta property="og:site_name" content="BLog for Trang Lee" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Essential Drupal development tools" />
+    <meta property="og:description" content="You can build Drupal websites with just a few tools, such as a code editor, browser and dev environment. While it is not necessary to use additional tools, tools do make your life easier and can save you a tonne..." />
+    <meta property="og:url" content="http://blog.tranglt.com/2015/07/13/Essential-Drupal-development-tools.html" />
+    <meta property="article:published_time" content="2015-07-12T17:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-07-13T03:11:56.388Z" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Essential Drupal development tools" />
+    <meta name="twitter:description" content="You can build Drupal websites with just a few tools, such as a code editor, browser and dev environment. While it is not necessary to use additional tools, tools do make your life easier and can save you a tonne..." />
+    <meta name="twitter:url" content="http://blog.tranglt.com/2015/07/13/Essential-Drupal-development-tools.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "BLog for Trang Lee",
+    "author": {
+        "@type": "Person",
+        "name": "Trang Lee",
+        "image": "https://avatars.githubusercontent.com/u/909219?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://trangunghoa.blogspot.com/"
+    },
+    "headline": "Essential Drupal development tools",
+    "url": "http://blog.tranglt.com/2015/07/13/Essential-Drupal-development-tools.html",
+    "datePublished": "2015-07-12T17:00:00.000Z",
+    "dateModified": "2015-07-13T03:11:56.388Z",
+    "description": "You can build Drupal websites with just a few tools, such as a code editor, browser and dev environment. While it is not necessary to use additional tools, tools do make your life easier and can save you a tonne..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="BLog for Trang Lee" href="http://blog.tranglt.com/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template  noimage">
+
+    
+
+
+    <article role="main" class="">
+        <header>
+            <a href="http://blog.tranglt.com" id="home_link">«</a>
+            <div class="meta"><time datetime="2015-07-13"><a href="/2015/07/13/Essential-Drupal-development-tools.html">July 13, 2015</a></time> <span class="count" id="js-reading-time"></span></div>
+            <h1>Essential Drupal development tools</h1>
+        </header>
+
+        <div class="text" id="js-post-content">
+            <div class="paragraph">
+<p>You can build Drupal websites with just a few tools, such as a code editor, browser and dev environment. While it is not necessary to use additional tools, tools do make your life easier and can save you a tonne of time and improve the quality of your work. So let’s take a look at the essential tools to use to develop with Drupal.</p>
+</div>
+<div class="paragraph">
+<p><strong>Drush</strong></p>
+</div>
+<div class="paragraph">
+<p>Drush is one of the most popular, if not the most popular, Drupal development tool out there. Drush is the command line and scripting interface for Drupal. You can use it to speed up installing, developing and maintaining Drupal sites. It takes some getting used to, and there are a lot of commands to remember but, once you do, it is a real time saver. Rather than clicking through the admin interface to achieve something, you simply type in one command. When building Drupal sites and developing custom modules and themes, this can really help.</p>
+</div>
+<div class="paragraph">
+<p>Get Drush</p>
+</div>
+<div class="paragraph">
+<p>The developers behind Drush recently moved its code repository from drupal.org to Github, where you can download or clone it. There are a few ways to install it, the drupal.org installation documentation is the best place to start.</p>
+</div>
+<div class="paragraph">
+<p><strong>Devel</strong></p>
+</div>
+<div class="paragraph">
+<p>Devel is probably the single most important tool for module development, behind Drush. Devel has sub-modules, such as Devel Generate and Theme Developer, built in for extra power and functionality.
+Devel does a lot of useful things, such as:
+Inspect PHP arrays and objects with Devel tools like dpm(). This alone is vital when developing modules.
+Print database queries for each page load, making it easier for you to identity slow queries
+Generate dummy content, taxonomy terms and users with Devel Generate
+Theme Developer displays important information about themes which can be a real time saver for theme development
+Information on node access for nodes (are nodes protected or visible to the public)
+Some of these are provided by Devel itself, and some by one of the sub-modules that comes with the Devel package.
+Devel should only be used for development and never left enabled on a live website. It is best to not even deploy it to the live site.
+Devel uses Krumo when inspecting arrays and objects with Devel. Krumo is an alternative to print_r and var_dump and displays human readable structured information about a PHP variable. Once installed, when you run Devel’s dpm() function, Krumo will handle the output in the browser and make it easier for you to see the particular variable and drill into.</p>
+</div>
+<div class="paragraph">
+<p>Get Devel</p>
+</div>
+<div class="paragraph">
+<p>You can get from the Devel project page. It is currently available for both Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Examples module</strong></p>
+</div>
+<div class="paragraph">
+<p>The Examples module is a useful collection of example code for common code implementations. It comes with sub-modules such as ajax_example, email_example, node_example and batch_example. If you are stuck on how to write code to achieve a particular task, the Examples module might just provide the inspiration that you need.</p>
+</div>
+<div class="paragraph">
+<p><strong>Get Examples</strong></p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Examples project page. It is currently available for Drupal 6, Drupal 7 and Drupal 8.
+Coder
+The Coder module ensures that your code adheres to the Drupal coding standards.
+Coder includes two submodules: Coder Review and Coder Upgrade. Coder Review allows you to verify that a module meets the Drupal coding standards and lets you know if you need to change something if the Drupal API changes. Coder Upgrade helps you upgrade your modules or themes to a new version of Drupal. It will actually rewrite parts of your code for you.
+Coder now includes Drupal Coder Sniffer (was at <a href="https://drupal.org/project/drupalcs" class="bare">https://drupal.org/project/drupalcs</a>). Coder Sniffer uses PEAR’s PHP Codesniffer and applies it to the Drupal coding standard. When you run it against a piece of code, it will tell you which parts of the code do not adhere to the standard (if any). You can run it in the admin interface, or command line.</p>
+</div>
+<div class="paragraph">
+<p>Get Coder</p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Coder project page. It is currently available for both Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Review</strong></p>
+</div>
+<div class="paragraph">
+<p>The Security Review runs tests against your site to identify security problems and provides a report of these problems. It doesn’t magically fix security issues for you - after it identifies the potential issues, you need to go through and remedy them - but it does save time.</p>
+</div>
+<div class="paragraph">
+<p>Get Security Review</p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Security Review project page. It is currently available for both Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Features</strong></p>
+</div>
+<div class="paragraph">
+<p>Turn configuration into a module so that you can deploy it and source control it. This is essential up to and including Drupal 7 because without it, a lot of the changes required to meet a certain use-case will be stored in the database only. You should not really make those changes on the live site but if you make them on your local version, how do you deploy them to live? Features makes this possible. This is incredibly helpful even if you are a single developer working on a single site. It is vital if you are working with more than one developer.</p>
+</div>
+<div class="paragraph">
+<p>Get Features</p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Features project page. It is currently available for both Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Diff</strong></p>
+</div>
+<div class="paragraph">
+<p>If you are using Features, you need to use the Diff module as well. Your features might become overridden, which means that what is in the database does not match what is in code. When this happens, you can use the Diff module to see the difference. You can also view changes between two revisions of nodes, modules etc. The diff module will save you a tonne of time.</p>
+</div>
+<div class="paragraph">
+<p>Get Diff</p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Diff project page. It is currently available for both Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Hacked</strong></p>
+</div>
+<div class="paragraph">
+<p>See if any contrib modules have been overridden since being downloaded. You can use it with Diff to see the differences, line by line. This is particularly useful if you are taking over a Drupal site from another developer, or working with a team where you don’t know what everyone is doing. It is bad practice to hack core or contrib modules but you don’t always know if something has changed and there isn’t always a patch file to help you. (Note: if you must change a contrib or core module, always create a patch file so you can reply it after applying updates).</p>
+</div>
+<div class="paragraph">
+<p>Get Hacked</p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Hacked project page. It is currently available for both Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Backup and Migrate</strong></p>
+</div>
+<div class="paragraph">
+<p>Backup and Migrate makes it very easy to backup your database. You can back up with one click in the admin interface, or my running one Drush command (drush bam-backup). You can also configure it to send your backups to services such as Dropbox or Amazon S3.</p>
+</div>
+<div class="paragraph">
+<p>Get Backup and Migrate</p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Backup and Migrate project page. It is currently available for Drupal 5, Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p>API Reference site and Drupal Contrib API site</p>
+</div>
+<div class="paragraph">
+<p>The default Drupal API documentation can be found here - api.drupal.org. This is a brilliant resource for core functions and hooks.</p>
+</div>
+<div class="paragraph">
+<p>Documentation for popular Drupal contributed moulded can be found on DrupalContrib. It is to contrib modules what api.drupal.org is to core.</p>
+</div>
+<div class="paragraph">
+<p><strong>Repository Viewer</strong></p>
+</div>
+<div class="paragraph">
+<p>Sometimes the easiest way to understand how a module works is to read the code. But it is a pain to have to download it first. You don’t have to. On the modules’ project page, there is the Repository Viewer link, which allows you to view the code in full, right in the browser.
+Repository Viewer on Drupal.org project pages
+Masquerade</p>
+</div>
+<div class="paragraph">
+<p>Often when developing Drupal, you need to test something as a different user. In fact, you should get used to not testing as the admin user! You need to ensure the permissions for various users and roles work. The Masquerade module allows you to easily switch to a different user. It is also very useful when a particular user reports a bug and you need to replicate exactly what they are doing.
+Get Masquerade</p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Masquerade project page. It is currently available for Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Drupal for Firebug</strong></p>
+</div>
+<div class="paragraph">
+<p>This allows you to see useful information about nodes, users, SQL queries and execute PHP right from Firebug. If you don’t want to use Firefox, there is also Drupal for Chrome.</p>
+</div>
+<div class="paragraph">
+<p>Get Drupal for Firebug or Drupal for Chrome</p>
+</div>
+<div class="paragraph">
+<p>You can get the Drupal code from the Drupal for Firebug project page.</p>
+</div>
+<div class="paragraph">
+<p>If you are using Firefox, you can get the official plugin from the Mozilla, or the latest version from the DrupalForFirebug repository.</p>
+</div>
+<div class="paragraph">
+<p>If you are using Chrome, you can get the plugin for Drupal for Chrome.</p>
+</div>
+<div class="paragraph">
+<p><strong>Administration menu</strong></p>
+</div>
+<div class="paragraph">
+<p>This is not really a development tool as such, but the admin menu makes navigating around the admin interface a LOT faster. How? Less clicks. It provides a bar across the top of the screen and a hierarchical drop down for each admin link, so you only have to click once to go to a specific admin page. Most of the other Drupal menus force you to click multiple times for deep links.</p>
+</div>
+<div class="paragraph">
+<p><strong>Get Administration Menu</strong></p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Administration menu project page. It is currently available for Drupal 6 and Drupal 7.
+Production Check, Production Monitor and Performance</p>
+</div>
+<div class="paragraph">
+<p>The Production Check module gives you the status of essential modules for production sites. It tells you whether or not they are disabled and information about critical errors. It covers caching, aggregation, compression, APC, PHP errors, SEO modules and development modules such as Devel (which should be disabled on a production site).</p>
+</div>
+<div class="paragraph">
+<p>You can use the Production Monitor module to add any number of sites to your local site and get Product Check on them. This makes it very easy to check all of your production sites from one single place.</p>
+</div>
+<div class="paragraph">
+<p>It even has integration with the Performance module, so you can monitor page generation times, memory usage etc for your production websites.</p>
+</div>
+<div class="paragraph">
+<p>Get Production Check, Production Monitor</p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Production check &amp; Production monitor project page. It is currently available for Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Get Performance</strong></p>
+</div>
+<div class="paragraph">
+<p>You can get it from the Performance project page. It is currently available for Drupal 6 and Drupal 7.</p>
+</div>
+<div class="paragraph">
+<p><strong>Drupal Project Lookup</strong></p>
+</div>
+<div class="paragraph">
+<p>Drupal Project Lookup is a Chrome extension which saves time when searching for a project page on drupal.org. To use it, you type pml followed by the project you are looking for. For example, to go to the Views project page, type “pml views”. This will take you to <a href="https://drupal.org/project/views" class="bare">https://drupal.org/project/views</a>
+Get Drupal Project Lookup</p>
+</div>
+<div class="paragraph">
+<p>You can Drupal Project Lookup from the Chrome web store.</p>
+</div>
+<div class="paragraph">
+<p><strong>Drupal API Search</strong></p>
+</div>
+<div class="paragraph">
+<p>Drupal API Search is a Chrome extension that saves time when searching for API documentation on api.drupal.org. To use it, type dr followed by function name you are looking for. It will autocomplete as you type. For example, to go to the API documentation for hook_form_alter, type “dr hook_form_alter”. This will take you to <a href="https://api.drupal.org/api/drupal/developer%21hooks%21core.php/function/hook_form_alter/6" class="bare">https://api.drupal.org/api/drupal/developer%21hooks%21core.php/function/hook_form_alter/6</a>.
+It defaults to Drupal 6 pages on api.drupal.org. You can change this by going to your chrome extensions page (chrome://extensions/), and clicking options for Drupal API Search. There you can change the Drupal version to 7 or 8.</p>
+</div>
+<div class="paragraph">
+<p>Get Drupal API Search</p>
+</div>
+<div class="paragraph">
+<p>You can get Drupal API Search from the Chrome web store.
+Dreditor
+Dreditor improves the experience of reviewing patches and commenting on issues on drupal.org. Its features include:
+Adds a patch reviewer button to patches in issues on drupal.org. After you click on the review button, you will get a nice patch file with syntax highlighting.
+Provides Auto-completion when adding comments on Drupal.org.
+Makes it easier to attach screenshots to issues
+Provides a template for commit messages
+Get Dreditor
+You can get Dreditor from its website.
+Non-Drupal specific tools
+There is a bunch of other tools that you may need to make your life easier developing Drupal modules and themes.
+Code editor or IDE.
+I use PhpStorm for a kick ass IDE or Sublime Text for a great code editor.
+MySQL GUI
+You can use the command line to interact with MySQL, but you might find it easier to use a GUI.
+PhpMyAdmin is the standard that you will find in a lot of places, including most hosting providers. For Mac, Sequel Pro is fast, slick and easy to use.
+Snippet manager
+There is lots of little (and big) bits of code that will be reused and it makes sense to store these in a snippet manager so you can easily reuse them. A lot of IDEs and code editors provide this functionality. I use a 3rd part tool because I often change IDEs, but want to retain the same snippet repo. I use Snippets (Mac only).
+Xdebug
+Xdebug is a debugging and profiling tool for Drupal. It allows you to step through your code, line by line, as a request is being returned. If you have a bug and you don’t know which bit of code is causing it, Xdebug can be a real timesaver. Even if you are not trying to identify a bug, this is a very useful exercise just to see all of the code that is run when Drupal is dealing with a request for a particular URL.
+CSS preprocesser
+Organise your CSS code and make it much easier to developer and maintaining with a CSS preprocesser The two most popular are Sass and Less. If you use Sass, then I recommend you use Compass as well.
+Other tools worth mentioning
+The following tools are not essential, especially if you are just starting with Drupal development. I have listed them here for completeness and you may find yourself needing to use them at some stage.
+Vagrant for creating a virtual development environment and Puppet or Chef for configuration management.
+VMWare - run a LAMP stack on Mac or Windows, as an alternative to Vagrant.
+XAMPP (cross platform), WampServer(Windows) or MAMP(Mac) for a development environment if you don’t want the hassle of setting one up with Vagrant or VMWare.
+Aegir is a system that makes it easier to deploy and manage multiple Drupal sites and servers. Aegir automates the process of creating server configuration files, databases and Drupal installation. There are additional AEgir based systems such as Barracuda, Octopusand DevShop.
+Behat / PHP Unit / Simple Test / Selenium for automated testing
+Kcachegrind / jMeter / Apache Bench for Performance testing.
+XHProf Code Profiler for profiling. Profiling is to measure the execution time for function or method calls when an application is dealing with a page request.
+New Relic to help you identify performance issues so you can create a faster application
+Deadwood to makes it easier to upgrade a module for a new major version of Drupal. It is now merged into Coder and is called Coder Upgrade, but you still need Deadwood if upgrading from Drupal 5 to 6.
+Schema for additional functionality not provided by the Schema API</p>
+</div>
+        </div>
+
+        <menu>
+            <a href="" id="btn_share" class="btn" title="Share">
+                <span aria-hidden="true" data-icon="S"></span>
+                <strong>Share</strong>
+            </a>
+            <a href="http://twitter.com/share?text=Essential%20Drupal%20development%20tools&url=http://blog.tranglt.com/2015/07/13/Essential-Drupal-development-tools.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
+                <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+            </a>
+        </menu>
+
+
+        <footer class="post-footer" role="contentinfo">
+
+            <div class="vcard">
+                <!-- <a href="http://blog.tranglt.com/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                    <span aria-hidden="true" data-icon=")"></span>
+                    <strong>Feed</strong>
+                </a> -->
+
+                <a href="" class="photo">
+                    <span style="background-image: url('https://avatars.githubusercontent.com/u/909219?v=3');">
+                        <img src="https://avatars.githubusercontent.com/u/909219?v=3" alt="Trang Lee">
+                    </span>
+                </a>
+
+                <div class="details">
+                    <h4><a href="" class="url n">Trang Lee</a></h4>
+                    Hanoi, Vietnamese<br>
+                    <a href="http://trangunghoa.blogspot.com/" class="js-remove-domain-schema">http://trangunghoa.blogspot.com/</a>
+                </div>
+            </div>
+
+            <div id="user_bio">
+                <div class="inner">
+                    
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+    </article>
+
+    <div id="share_modal">
+        <div class="wrap">
+            <div class="inner">
+                <header>
+                    Share
+                    <a href="" class="close" title="Close">&times;</a>
+                </header>
+
+                <div class="roon-share-links">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                    <div id="fb-elems">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=463438580397968";
+                        fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div>
+                    </div>
+
+                    <div id="pinit-btn">
+                        <a href="//pinterest.com/pin/create/button/?url=http://blog.tranglt.com/2015/07/13/Essential-Drupal-development-tools.html&amp;description=Essential%20Drupal%20development%20tools-BLog%20for%20Trang%20Lee " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
+                        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+            function get_text(el) {
+                ret = "";
+                var length = el.childNodes.length;
+                for(var i = 0; i < length; i++) {
+                    var node = el.childNodes[i];
+                    if(node.nodeType != 8) {
+                        ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+                    }
+                }
+                return ret;
+            }
+            function reading_time () {
+                var post_content = document.getElementById('js-post-content');
+                if (post_content) {
+                    var words = get_text(post_content),
+                        count = words.split(/\s+/).length,
+                        read_time = Math.ceil((count / 150)),
+                        read_time_node = document.createTextNode(read_time + ' min read');
+                    document.getElementById('js-reading-time').appendChild(read_time_node);
+                }
+            }
+
+        function no_schema_links () {
+            var links = document.querySelectorAll('.js-remove-domain-schema');
+            if (links) {
+                for (i = 0; i < links.length; ++i) {
+                    var link = links[i],
+                        text = link.innerHTML,
+                        no_schema = text.replace(/.*?:\/\//g, "");
+                    link.innerHTML = no_schema;
+                }
+            }
+        }
+
+        window.onload = function () {
+            no_schema_links();
+
+            reading_time();
+        }
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+        <script>
+            $(function(){
+                var share_modal = $("#share_modal"),
+                    update_social_links = true;
+
+                $("#btn_share").click(function(){
+                    var that = $(this);
+                    share_modal.fadeIn(200);
+                    return false;
+                });
+
+                share_modal.click(function(e){
+                    if (e.target.className == "wrap" || e.target.id == "share_modal") {
+                        share_modal.fadeOut(200);
+                    }
+                    return false;
+                });
+
+                share_modal.find("div.inner > header > a.close").click(function(){
+                    share_modal.fadeOut(200);
+                    return false;
+                });
+            });
+        </script>
+
+
+
+</body>
+</html>
